@@ -1,4 +1,4 @@
-== Simple Links Importer ==
+=== Simple Links Importer ===
 Contributors: leebird
 Donate link: none
 Tags: links, import, no-opml, importer, link
