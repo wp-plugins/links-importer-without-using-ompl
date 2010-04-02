@@ -1,7 +1,7 @@
-=== Links Importer Without Using Opml ===
+== Simple Links Importer ==
 Contributors: leebird
 Donate link: none
-Tags: links, import, no-opml
+Tags: links, import, no-opml, importer, link
 Requires at least: 2.8.5
 Tested up to: 2.9.2
 Stable tag: trunk
@@ -10,12 +10,13 @@ This plugin is a links import tool for blogs that doesn't support ompl output.
 
 == Description ==
 
-This plugin is a links import tool for blogs that doesn't support ompl output. Though now WordPress already has the method to insert links from an opml file or URL conviniently, not all blogs would support the opml method and thus a more simple tool is necessary. I develop this tool for my personal need firstly, and now I want to make it more practical and hope more people can get some help from this tool.
+This plugin is a links import tool for blogs that doesn't support ompl output. Though now WordPress already has the method to insert links from an opml file or URL conviniently, not all blogs would support the opml method and thus a simpler tool is necessary. I developed this tool for my personal need firstly, and now I want to make it more practical and hope more people can get some help from it.
 
 == Installation ==
 
 1. Upload the links_import_online.php to wp-admin/import/
-2. Then login your blog, you will find the tool at tools/import named "Import Links Online"
+
+2. Login your blog, you will find it at tools/import named "Import Links Online"
 
 
 == Frequently Asked Questions ==
@@ -32,7 +33,7 @@ This plugin is a links import tool for blogs that doesn't support ompl output. T
 
 = What does the option "Filter with the first word of domain name" mean? =
 
-   This option means a filter for a better links list. Since the plugin get links through "fuzzy match" by using regular expression, the list may contain some links that are not you want. Anyway, if you are not sure whether to choose it, just leave it unticked and an entire links list will be showed.
+   This option means a filter for a better links list. Since the plugin get links through "fuzzy match" by using regular expression, the list may contain some links you don't need. Anyway, if you are not sure, just leave it unticked and an entire list will be showed.
 
 
 
