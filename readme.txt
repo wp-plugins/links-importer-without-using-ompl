@@ -4,7 +4,7 @@ Donate link: http://wordpress.org/extend/plugins/links-importer-without-using-om
 Tags: links, import, no-opml, importer, link
 Requires at least: 2.8.5
 Tested up to: 2.9.2
-Stable tag: trunk
+Stable tag: 1.1
 
 A links import tool for all blogs. 
 
