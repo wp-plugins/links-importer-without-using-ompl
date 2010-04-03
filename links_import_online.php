@@ -1,14 +1,13 @@
 <?php
-
 /*
 Plugin Name: Simple Links Importer
+Plugin URI: http://wordpress.org/extend/plugins/links-importer-without-using-ompl/
 Description: A links importer for all the blogs.
 Version: 1.1
 Author: Leebird
-Plugin URI: http://wordpress.org/extend/plugins/links-importer-without-using-ompl/
 Author URI: http://misland.org
 */
-	
+
 class LinksImporter	
 	{	
 		function header() 
