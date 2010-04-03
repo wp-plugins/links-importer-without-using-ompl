@@ -1,7 +1,7 @@
 === Simple Links Importer ===
 Contributors: leebird
 Donate link: http://wordpress.org/extend/plugins/links-importer-without-using-ompl
-Tags: links, import, no-opml, importer, link
+Tags: links, import, no-opml, importer, link, links import, import links
 Requires at least: 2.8.5
 Tested up to: 2.9.2
 Stable tag: 1.1
