@@ -38,8 +38,8 @@ This option means a filter for a better links list. Since the plugin get links t
 == Changelog ==
 
 = 1.1 =
-* Improve UI
-* Improve links filter
+* Improved UI
+* Improved links filter
 
 = 1.0 =
-The first vesion of Links Importer Without Using Opml
+Initial release of Simple Links Importer

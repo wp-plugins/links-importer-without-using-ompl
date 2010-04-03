@@ -1,4 +1,13 @@
 <?php
+
+/*
+Plugin Name: Simple Links Importer
+Description: A links importer for all the blogs.
+Version: 1.1
+Author: Leebird
+Plugin URI: http://www.jakeruston.co.uk/2009/11/wordpress-plugin-jr-embed/
+Author URI: http://misland.org
+*/
 	
 class LinksImporter	
 	{	
