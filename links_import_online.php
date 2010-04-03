@@ -1,5 +1,13 @@
 <?php
-	
+
+/*
+Plugin Name: Simple Links Importer
+Description: A links importer for all the blogs.
+Version: 1.1
+Author: Leebird
+Author URI: http://misland.org
+*/
+
 class LinksImporter	
 	{	
 		function header() 
