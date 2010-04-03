@@ -18,13 +18,13 @@ class LinksImporter
 		{	
 			if($_POST["site"]=='') 
 			{	
-				echo 'Hi, this tool can help you to copy your links from your old blog online. Have a try!<br \><br \>'.
-				     'Please input the URL (including "http://") of the blog from which you want to get links. <br \><br \>'.
-					 'option of filter will do some optimization of the obtained list. <br \>'.
-					 'If you are not sure, just untick the option and get the entire list. You may need a little more time to choose the useful links.<br \><br \>';
+				echo 'Hi, this tool can help you to copy your links from your old blog online. <br \><br \>'.
+				     'Please input the URL <b>(including "http://")</b> <br \><br \>'.
+					 'The filter will do some optimization of the obtained list. <br \>'.
+					 'If you are not sure, just untick the option and get the entire list.<br \><br \>';
 				echo '<form action="admin.php?import=links_import_online&amp;step=1" method="post">'.
 					 'URL: <input type="text" name="site" size="50"><br \><br \>'.
-					 'Filter with the first word of domain name: '.
+					 'Links Filter: '.
 					 '<input type="checkbox" name="filter" value="filter"><br \><br \>'.
 					 '<input type="submit" value="get links"/>'.
 					 '</form>';	
@@ -50,9 +50,17 @@ class LinksImporter
 			$pattern_for_all_links="'href\=[\"|\']http\:\/\/(.+?)<\/a>'";
 			$pattern_for_one_link="'href=[\'|\"](.+?)[\'|\"]'";
 			$pattern_for_link_name="'[\'|\"]>(.+?)<\/a>'";
-			$pattern_for_self_filter="'http\:\/\/(.+?)\.'";
+			$pattern_for_self_filter_front="'http\:\/\/(.+?)\.'";
+			$pattern_for_self_filter_back ="'[^\/]\/[^\/](.+)'";
 
-			preg_match($pattern_for_self_filter,$url,$domain);
+			preg_match($pattern_for_self_filter_front,$url,$domain_1);
+			preg_match($pattern_for_self_filter_back,$url,$domain_2);
+
+
+			if ($domain_2[1] != '')
+				$domain = $domain_2[1];
+			else
+				$domain = $domain_1[1];
 			
 			preg_match_all($pattern_for_all_links,$contents,$array);
 
@@ -65,7 +73,7 @@ class LinksImporter
 				foreach ($links as $link)
 				{	if ($links_count < $links_num)
 					{	
-						if ((strpos($link,$domain[1])) && ($filter=='filter'))
+						if ((strpos($link,$domain)) && ($filter=='filter'))
 						{	
 							$links_count++;
 							continue;

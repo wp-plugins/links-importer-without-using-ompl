@@ -6,7 +6,7 @@ Requires at least: 2.8.5
 Tested up to: 2.9.2
 Stable tag: trunk
 
-This plugin is a links import tool for blogs that doesn't support ompl output. 
+A links import tool for all blogs. 
 
 == Description ==
 
@@ -29,15 +29,17 @@ This plugin is a links import tool for blogs that doesn't support ompl output. T
 
 = How to uninstall it? =
 
-   Just delete it from wp-admin/import. In fact it does no changes to the database or other core codes.
+Just delete it from wp-admin/import. In fact it does no changes to the database or other core codes.
 
-= What does the option "Filter with the first word of domain name" mean? =
+= What does the option "Links Filter" mean? =
 
-   This option means a filter for a better links list. Since the plugin get links through "fuzzy match" by using regular expression, the list may contain some links you don't need. Anyway, if you are not sure, just leave it unticked and an entire list will be showed.
-
-
+This option means a filter for a better links list. Since the plugin get links through "fuzzy match" by using regular expression, the list may contain some links you don't need. Anyway, if you are not sure, just leave it unticked and an entire list will be showed.
 
 == Changelog ==
 
+= 1.1 =
+* Improve UI
+* Improve links filter
+
 = 1.0 =
-* The first vesion of Links Importer Without Using Opml
+The first vesion of Links Importer Without Using Opml
