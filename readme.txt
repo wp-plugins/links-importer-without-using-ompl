@@ -9,6 +9,8 @@ A links import tool for all blogs.
 
 == Description ==
 
+= I'm not maintaining this tool anymore. Please don't download it because it's outdated and won't be compatible with the latest WordPress versions. =
+
 This plugin is a links import tool for blogs that doesn't support ompl output. Though now WordPress already has the method to insert links from an opml file or URL conviniently, not all blogs would support the opml method and thus a simpler tool is necessary. I developed this tool for my personal need firstly, and now I want to make it more practical and hope more people can get some help from it.
 
 == Installation ==
